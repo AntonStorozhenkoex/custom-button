@@ -9,7 +9,7 @@ interface CustomButtonProps {
 }
 
 
-const useStyles = makeStyles(<Theme, CustomButtonProps>() => ({
+const useStyles = makeStyles(<Theme,{res:any}>() => ({
     button: {
         position:'relative',
         display:'inline-block',
@@ -35,7 +35,7 @@ const useStyles = makeStyles(<Theme, CustomButtonProps>() => ({
         stroke:'blue',
         strokeWidth:'5px',
         strokeDasharray:'314',
-        strokeDashoffset: Props => Props.res + 12
+        strokeDashoffset: (res) => 
     }
 }));
 type MyButtonProps = CustomButtonProps
